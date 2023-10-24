@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mentoria</title>
+</head>
+<body>
+    <header>
+        <h1>MENTORIA</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <main>
+
+        <form id="my-form" action="">
+
+            <fieldset class="fieldset-wrapper">
+                    <legend>Informações Pessoais</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name">
+                        
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email">Email <span>(digite um email válido)</span></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+            </fieldset>
+
+            <fieldset class="fieldset-wrapper">
+                <legend>Informações do mentor</legend>
+
+                    <div class="input-wrapper">
+
+                        <label for="mentor">Nome do seu mentor <span>(Selecione o seu mentor no campo abaixo...)</span></label>
+                        <select name="mentor" id="mentor">
+                            <option value="yuri">Yuri Sousa</option>
+                            <option value="mayk">Mayk Brito</option>
+                            <option value="rodrigo">Rodrigo Santana</option>
+                        </select>            
+
+                    </div>
+
+            </fieldset>
+
+            <fieldset class="fieldset-wrapper">
+                <legend>Seus horários disponíveis</legend>
+
+                <h3>Primeira mentoria</h3>
+
+                <div class="input-wrapper">
+
+                    <label for="first-date">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" name="first-date" id="first-date">
+
+                    <label for="begin-first">Das</label>
+                    <input type="time" name="begin-first" id="begin-first">
+
+                    <label for="end-first">Até</label>
+                    <input type="time" name="end-first" id="end-first">
+
+                </div>
+
+                <h3>Segunda Mentoria</h3>
+
+                <div class="input-wrapper">
+
+                    <label for="second-date">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" name="second-date" id="second-date">
+
+                    <label for="begin-second">Das</label>
+                    <input type="time" name="begin-second" id="begin-second">
+
+                    <label for="end-second">Até</label>
+                    <input type="time" name="end-second" id="end-second">
+
+                </div>
+            </fieldset>
+        </form>
+    
+        <footer>
+            <button type="submit" form="my-form">Salvar</button>
+        </footer>
+
+    </main>
+</body>
+</html>
